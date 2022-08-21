@@ -1,3 +1,3 @@
 # landing-page
 
-My first HTML with CSS project.
+Template: https://cdn.statically.io/gh/TheOdinProject/curriculum/main/foundations/html_css/project/odin-project.png.

@@ -7,7 +7,8 @@ body {
 }
 
 .body {
-    width: 1025px;
+    width: 1023px;
+    flex-shrink: 0;
 }
 
 .dark-blue {
@@ -15,6 +16,21 @@ body {
     justify-content: center;
     background-color: #1f2937;
     color: #f9faf8;
+}
+
+.bright-blue {
+    background-color: #3882f6;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.light-grayish-blue {
+    background: #e5e7eb;
+    color: #1f2937;
+    display: flex;
+    justify-content: center;
 }
 
 .logo {
@@ -54,17 +70,6 @@ body {
     height: 240px;
 }
 
-.sign-up {
-    font-size: 16px;
-    font-weight: bold;
-    width: 132px;
-    height: 40px;
-    border-radius: 6px;
-    border: none;
-    background-color: #3882f6;
-    color: white;
-}
-
 .sub, a {
     font-size: 18px;
     color: #e5e7eb;
@@ -74,6 +79,12 @@ body {
     padding-bottom: 10px;
     filter: contrast(80%);
 }
+
+.sign-up {
+    width: 132px;
+    height: 35px;
+    border: none;
+}   
 
 .body-information {
     margin-bottom: 120px;
@@ -113,13 +124,6 @@ body {
     filter: contrast(80%);
 }
 
-.light-grayish-blue {
-    background: #e5e7eb;
-    color: #1f2937;
-    display: flex;
-    justify-content: center;
-}
-
 .quote-body {
     width: 782px;
     height: 430px;
@@ -140,6 +144,42 @@ body {
     padding-right: 30px;
     font-weight: bold;
     text-align: end;
+}
+
+.container {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.bright-blue.lower-contrast {
+    font-weight: normal;
+}
+
+.call-to-action {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.call-to-action-sign-up {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 160px;
+}
+
+.one {
+    font-size: 24px;
+}
+
+.sign-up.border-white {
+    border: 2px solid white;
+    
 }
 
 .links {
