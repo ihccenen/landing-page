@@ -1,5 +1,5 @@
 body {
-    font-family: Tahoma, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,6 @@ body {
     color: #f9faf8;
 }
 
-
 .logo {
     font-size: 24px;
     font-weight: bold;
@@ -25,7 +24,6 @@ body {
 
 .main {
     font-size: 48px;
-    padding-bottom: 8px;
     font-weight: bolder;
 }
 
@@ -73,7 +71,7 @@ body {
 }
 
 .sub.lower-contrast {
-    padding-bottom: 8px;
+    padding-bottom: 10px;
     filter: contrast(80%);
 }
 
@@ -98,6 +96,7 @@ body {
 
 .images {
     width: 170px;
+    flex-shrink: 0;
 }
 
 .thumbnail {
@@ -114,9 +113,38 @@ body {
     filter: contrast(80%);
 }
 
+.light-grayish-blue {
+    background: #e5e7eb;
+    color: #1f2937;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-body {
+    width: 782px;
+    height: 430px;
+    padding-left: 44px;
+    flex-shrink: 0;
+}
+
+.text {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 36px;
+    font-style: italic;
+    padding-top: 130px;
+}
+
+.author {
+    font-size: 24px;
+    padding-right: 30px;
+    font-weight: bold;
+    text-align: end;
+}
+
 .links {
     display: flex;
-    gap: 16px;
+    gap: 24px;
     margin: 0;
     list-style-type: none;
 }
